@@ -1,0 +1,6 @@
+{
+  "name": "EarnFast",
+  "description": "A highly polished, interactive Telegram Web App game where users play Image Finder, Tic-Tac-Toe, and Math puzzles to earn rewards and refer friends.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
