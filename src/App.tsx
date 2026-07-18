@@ -505,9 +505,9 @@ export default function App() {
     setIsWaitingForAdClick(true);
     setAdClickStartTime(Date.now());
 
-    if (window.show_10499975) {
+    if (window.show_11321974) {
       window
-        .show_10499975()
+        .show_11321974()
         .then(() => {
           // If they didn't navigate or click
           if (isWaitingForAdClick) {
