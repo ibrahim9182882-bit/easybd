@@ -86,8 +86,8 @@ export default function App() {
 
   // Global Settings
   const [settings, setSettings] = useState<GlobalSettings>({
-    coinValue: "₹1",
-    paymentMethods: ["Paytm", "UPI", "Google Pay"],
+    coinValue: "TK1",
+    paymentMethods: ["Bkash", "Nagad", "Bank"],
     gameReward: 10,
     tttReward: 10,
     mathReward: 10,
@@ -122,15 +122,15 @@ export default function App() {
   // Simulated Withdrawal Feed (Fake sliding feed)
   const [tickerIndex, setTickerIndex] = useState(0);
   const simulatedPayments = [
-    { name: "Rahul", amount: 20 },
+    { name: "Rasel", amount: 20 },
     { name: "Priya", amount: 50 },
-    { name: "Amit", amount: 10 },
+    { name: "Nijhum", amount: 10 },
     { name: "Sneha", amount: 100 },
-    { name: "Vikram", amount: 150 },
+    { name: "Vs", amount: 150 },
     { name: "Anjali", amount: 20 },
-    { name: "Rohit", amount: 50 },
-    { name: "Kavita", amount: 10 },
-    { name: "Arjun", amount: 100 },
+    { name: "sohit", amount: 50 },
+    { name: "Kalaa", amount: 10 },
+    { name: "Mahu", amount: 100 },
     { name: "Neha", amount: 50 },
   ];
 
@@ -241,8 +241,8 @@ export default function App() {
             if (docSnap.exists()) {
               const d = docSnap.data();
               setSettings({
-                coinValue: d.coinValue || "₹1",
-                paymentMethods: d.paymentMethods || ["Paytm", "UPI", "Google Pay"],
+                coinValue: d.coinValue || "TK1",
+                paymentMethods: d.paymentMethods || ["Bkash", "Nagad", "Bank"],
                 gameReward: Number(d.gameReward) || 10,
                 tttReward: Number(d.tttReward) || 10,
                 mathReward: Number(d.mathReward) || 10,
